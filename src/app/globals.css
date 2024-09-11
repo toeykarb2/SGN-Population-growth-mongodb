@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+   display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically if header has a height */
+  height: 100px; /* Set a height if you want vertical centering */
+  font-family: 'Roboto', sans-serif; /* Use the Google Font */
+  font-size: 2rem;
+  margin: 10; /* Remove default margin */
+}
+
