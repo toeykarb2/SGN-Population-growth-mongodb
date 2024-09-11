@@ -24,7 +24,9 @@ export async function GET() {
             return NextResponse.json({});
         }
 
-        const formattedData: PopulationData = data as PopulationData;
+
+        // Remove _id field if present
+        const { _id, ...formattedData } = data as PopulationData;
 
         return NextResponse.json(formattedData);
     } catch (error) {
